@@ -73,8 +73,6 @@
     <Folder Include="reporting" />
     <Folder Include="reporting\Stored Procedures" />
     <Folder Include="reporting\Views" />
-    <Folder Include="sample_data\" />
-    <Folder Include="sample_data\Stored Procedures\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="data_testing\Tables\ConnectionDefinition.sql" />
