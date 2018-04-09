@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>DataIntegrity.DB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{377279c6-e40c-4457-9fdf-852647d2889c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>DB.DataDrivenTesting</RootNamespace>
+    <AssemblyName>DB.DataDrivenTesting</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <GenerateCreateScript>True</GenerateCreateScript>
+    <IncludeSchemaNameInFileName>True</IncludeSchemaNameInFileName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="data_testing" />
+    <Folder Include="data_testing\Tables" />
+    <Folder Include="Security\" />
+    <Folder Include="data_testing\Stored Procedures" />
+    <Folder Include="data_testing\Views" />
+    <Folder Include="reporting" />
+    <Folder Include="reporting\Stored Procedures" />
+    <Folder Include="reporting\Views" />
+    <Folder Include="sample_data\" />
+    <Folder Include="sample_data\Stored Procedures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="data_testing\Tables\ConnectionDefinition.sql" />
+    <Build Include="data_testing\Tables\TestDefinition.sql" />
+    <Build Include="data_testing\Tables\QueryDefinition.sql" />
+    <Build Include="data_testing\Tables\TestAssignment.sql" />
+    <Build Include="data_testing\Tables\TestExecution.sql" />
+    <Build Include="data_testing\Tables\TestExecutionResult.sql" />
+    <Build Include="Security\data_testing.sql" />
+    <Build Include="data_testing\Tables\ExecutionReconciliation.sql" />
+    <Build Include="data_testing\Stored Procedures\StopTestExecutionResult.sql" />
+    <Build Include="data_testing\Stored Procedures\StopTestExecution.sql" />
+    <Build Include="data_testing\Stored Procedures\StartTestExecutionResult.sql" />
+    <Build Include="data_testing\Stored Procedures\StartTestExecution.sql" />
+    <Build Include="data_testing\Stored Procedures\ReconcileExecutionResults.sql" />
+    <Build Include="data_testing\Views\TestDesign.sql" />
+    <Build Include="data_testing\Tables\ResultGroup.sql" />
+    <Build Include="data_testing\Stored Procedures\AddResultGroup.sql" />
+    <Build Include="data_testing\Tables\TestGroup.sql" />
+    <Build Include="data_testing\Views\LatestTestExecution.sql" />
+    <Build Include="data_testing\Views\FailedTestExecutions.sql" />
+    <Build Include="data_testing\Views\AllTestExecutions.sql" />
+    <Build Include="data_testing\Stored Procedures\AddSqlConnection.sql" />
+    <Build Include="Reporting\Stored Procedures\QueryDefinition.sql" />
+    <Build Include="Reporting\Stored Procedures\LatestTestExecutionDetail.sql" />
+    <Build Include="Security\reporting.sql" />
+    <Build Include="Reporting\Views\LatestTestExecutionSummary.sql" />
+    <Build Include="data_testing\Stored Procedures\AssignNewQuery.sql" />
+    <Build Include="data_testing\Stored Procedures\AddTest.sql" />
+    <Build Include="data_testing\Stored Procedures\GetTestDetails.sql" />
+    <Build Include="data_testing\Stored Procedures\GetAllTestsFromGroup.sql" />
+    <Build Include="data_testing\Stored Procedures\DeleteEntireTest.sql" />
+    <Build Include="data_testing\Stored Procedures\GenerateTestSetupScript.sql" />
+    <Build Include="reporting\Views\DimTest.sql" />
+    <Build Include="reporting\Views\DimResultGroup.sql" />
+    <Build Include="reporting\Views\DimConnection.sql" />
+    <Build Include="data_testing\Stored Procedures\DeleteQueryAssignment.sql" />
+    <Build Include="reporting\Views\FactTestResultValue.sql" />
+    <Build Include="reporting\Views\FactTestResultByCategory.sql" />
+    <Build Include="reporting\Views\FactTestResult.sql" />
+    <Build Include="reporting\Stored Procedures\ListTestGroups.sql" />
+    <Build Include="reporting\Stored Procedures\ListTestDefinitions.sql" />
+    <Build Include="reporting\Stored Procedures\ExecutionSummary.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="SQL-PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SchemaCompare.scmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DataIntegrity.DB.refactorlog" />
+  </ItemGroup>
+</Project>

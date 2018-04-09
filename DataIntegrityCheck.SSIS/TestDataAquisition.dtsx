@@ -1,0 +1,2771 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/11/2016 9:21:47 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LONGROBSP3"
+  DTS:CreatorName="TALAVANT\rob.long"
+  DTS:DTSID="{353B5423-999E-4E44-A288-4C4277DF775F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="TestDataAquisition"
+  DTS:PackageType="5"
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="188"
+  DTS:VersionGUID="{9A4A5273-EE38-4F72-8007-B77D1BA69BB1}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{17374C87-B019-46CC-AEE8-9B8F2845C850}"
+      DTS:ObjectName="TestGroupName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Daily Sales Metrics</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{316960ED-2D37-4548-9F04-51C0163F0813}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestDefinitionId">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{15C2DB2B-749D-488A-A585-6744C6D03D88}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="TestList">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0E6443FB-77FA-455E-9657-30B359B54394}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_CommandText">
+      <DTS:VariableValue
+        DTS:DataType="8">SELECT 100.0000000000054 Value, NULL GroupName</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C050FEAC-52DC-40A1-996C-C19D5ABBE4B0}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_ConnectionString">
+      <DTS:VariableValue
+        DTS:DataType="8">Data Source=.;Initial Catalog=SSRS_Catalog;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B13AC101-BF24-4537-822C-8756CDE87FB6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_Details">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{927FA90E-BA13-4197-9C40-7C56DBF6D6D8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_ExecutionId">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{29E8B274-EDAD-44EB-8166-AF00C39AF650}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_StartDateTime">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5CA44723-E502-4F24-B564-9844C365B563}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Test_TestAssignmentId">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B4CADA3-1DF5-407B-838F-E8E807BC83A8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\FELC - Loop Each Test in Group"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{DC7A7CC0-735F-4C2F-A891-DA1DC0A6A285}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="FELC - Loop Each Test in Group">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachADOEnumerator"
+        DTS:DTSID="{910BF5AB-C216-4CA1-9DF9-D68D4BAEE95D}"
+        DTS:ObjectName="{910BF5AB-C216-4CA1-9DF9-D68D4BAEE95D}">
+        <DTS:ObjectData>
+          <FEEADO
+            EnumType="EnumerateRowsInFirstTable"
+            VarName="User::TestList" />
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DTSID="{ad5153da-8228-42c7-ba54-8076a37d679b}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="FELC - Load results for each test">
+          <DTS:ForEachEnumerator
+            DTS:CreationName="Microsoft.ForEachADOEnumerator"
+            DTS:DTSID="{5eee7042-1fe5-4e02-8c7c-9d7aa9d841e0}"
+            DTS:ObjectName="{59F79F52-F098-4FED-8E1B-5A773761FCF8}">
+            <DTS:ObjectData>
+              <FEEADO
+                EnumType="EnumerateRowsInFirstTable"
+                VarName="User::Test_Details" />
+            </DTS:ObjectData>
+          </DTS:ForEachEnumerator>
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:DelayValidation="True"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{985c0380-985b-4bd8-8430-4fabde1c217b}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="DFT - Loading Results"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                      name="DRV - Package Values"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Inputs[Derived Column Input]"
+                          description="Input to the Derived Column Transformation"
+                          name="Derived Column Input">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output]"
+                          description="Default Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          name="Derived Column Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestAssignmentId]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestAssignmentId]"
+                              name="TestAssignmentId"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">@[User::Test_TestAssignmentId]</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">@[User::Test_TestAssignmentId]</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestExecutionId]"
+                              dataType="i8"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestExecutionId]"
+                              name="TestExecutionId"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">@[User::Test_ExecutionId]</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">@[User::Test_ExecutionId]</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StopDateTime]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StopDateTime]"
+                              name="StopDateTime"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">[GETDATE]()</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">GETDATE()</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StartDateTime]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StartDateTime]"
+                              name="StartDateTime"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_DBTIMESTAMP)@[User::Test_StartDateTime]</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_DBTIMESTAMP)@[User::Test_StartDateTime]</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[ResultGroupId]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[ResultGroupId]"
+                              name="ResultGroupId"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">1</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">1</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Error Output]"
+                          description="Error Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Derived Column Error Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName"
+                      componentClassID="Microsoft.Lookup"
+                      contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+                      description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+                      name="LKP - Check for GroupName"
+                      usesDispositions="true"
+                      version="6">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the SQL statement that generates the lookup table."
+                          expressionType="Notify"
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [data_testing].[ResultGroup]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                          expressionType="Notify"
+                          name="SqlCommandParam"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [data_testing].[ResultGroup]) [refTable]
+where [refTable].[Name] = ?</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the type of connection used to access the reference dataset."
+                          name="ConnectionType"
+                          typeConverter="LookupConnectionType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the cache type of the lookup table."
+                          name="CacheType"
+                          typeConverter="CacheType">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                          name="NoMatchBehavior"
+                          typeConverter="LookupNoMatchBehavior">1</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                          name="NoMatchCachePercentage">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                          name="MaxMemoryUsage">25</property>
+                        <property
+                          dataType="System.Int64"
+                          description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                          name="MaxMemoryUsage64">25</property>
+                        <property
+                          dataType="System.String"
+                          description="Indicates whether to reference metadata in an XML format."
+                          name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="ResultGroupId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Name" dataType="DT_STR" length="500" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="CreatedBy" dataType="DT_STR" length="128" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                          name="ParameterMap">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]};</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                          name="TreatDuplicateKeysAsError">false</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Connections[OleDbConnection]"
+                          connectionManagerID="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}:external"
+                          connectionManagerRefId="Project.ConnectionManagers[DataDrivenTesting]"
+                          description="Connection manager used to access lookup data."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input]"
+                          name="Lookup Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input].Columns[GroupName]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="500"
+                              cachedName="GroupName"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]">
+                              <properties>
+                                <property
+                                  dataType="System.String"
+                                  description="Specifies the column in the reference table that a column joins."
+                                  name="JoinToReferenceColumn">Name</property>
+                                <property
+                                  dataType="System.Null"
+                                  description="Specifies the column in the reference table from which a column is copied."
+                                  name="CopyFromReferenceColumn" />
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Match Output]"
+                          errorOrTruncationOperation="Lookup"
+                          exclusionGroup="1"
+                          name="Lookup Match Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Match Output].Columns[ResultGroupId]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Copy Column"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Match Output].Columns[ResultGroupId]"
+                              name="ResultGroupId"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  dataType="System.String"
+                                  description="Specifies the column in the reference table from which a column is copied."
+                                  name="CopyFromReferenceColumn">ResultGroupId</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup No Match Output]"
+                          description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                          exclusionGroup="1"
+                          name="Lookup No Match Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input]">
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Lookup Error Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group"
+                      componentClassID="Microsoft.OLEDBCommand"
+                      contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                      description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+                      name="OLECMD - AddResult Group"
+                      usesDispositions="true"
+                      version="2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          expressionType="Notify"
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">EXEC ? = data_testing.AddResultGroup @GroupName = ?</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Connections[OleDbConnection]"
+                          connectionManagerID="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}:external"
+                          connectionManagerRefId="Project.ConnectionManagers[DataDrivenTesting]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input]"
+                          errorOrTruncationOperation="Command Execution"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Command Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].Columns[GroupName]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="500"
+                              cachedName="GroupName"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].ExternalColumns[@GroupName]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].Columns[ResultGroupId]"
+                              cachedDataType="i4"
+                              cachedName="ResultGroupId"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].ExternalColumns[@RETURN_VALUE]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[ResultGroupId]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].ExternalColumns[@GroupName]"
+                              codePage="1252"
+                              dataType="str"
+                              length="500"
+                              name="@GroupName">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                                  name="DBParamInfoFlags">65</property>
+                              </properties>
+                            </externalMetadataColumn>
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input].ExternalColumns[@RETURN_VALUE]"
+                              dataType="i4"
+                              name="@RETURN_VALUE">
+                              <properties>
+                                <property
+                                  dataType="System.Int32"
+                                  description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                                  name="DBParamInfoFlags">82</property>
+                              </properties>
+                            </externalMetadataColumn>
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Output]"
+                          exclusionGroup="1"
+                          name="OLE DB Command Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input]">
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Command Error Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="OLE_DST - ExecutionResult"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[data_testing].[TestExecutionResult]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Connections[OleDbConnection]"
+                          connectionManagerID="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}:external"
+                          connectionManagerRefId="Project.ConnectionManagers[DataDrivenTesting]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[Value]"
+                              cachedDataType="r4"
+                              cachedName="Value"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[Value]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[Value]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[TestExecutionId]"
+                              cachedDataType="i8"
+                              cachedName="TestExecutionId"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[TestExecutionId]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestExecutionId]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[StopDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StopDateTime"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[EndDateTime]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StopDateTime]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[StartDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StartDateTime"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[StartDateTime]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StartDateTime]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[ResultGroupId]"
+                              cachedDataType="i4"
+                              cachedName="ResultGroupId"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[ResultGroupId]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[ResultGroupId]" />
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].Columns[TestAssignmentId]"
+                              cachedDataType="i4"
+                              cachedName="TestAssignmentId"
+                              externalMetadataColumnId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[TestAssignmentId]"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestAssignmentId]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[TestExecutionResultId]"
+                              dataType="i8"
+                              name="TestExecutionResultId" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[TestExecutionId]"
+                              dataType="i8"
+                              name="TestExecutionId" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[StartDateTime]"
+                              dataType="dbTimeStamp2"
+                              name="StartDateTime"
+                              scale="7" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[EndDateTime]"
+                              dataType="dbTimeStamp2"
+                              name="EndDateTime"
+                              scale="7" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[Value]"
+                              dataType="r8"
+                              name="Value" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[ResultGroupId]"
+                              dataType="i4"
+                              name="ResultGroupId" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[CreatedBy]"
+                              codePage="1252"
+                              dataType="str"
+                              length="128"
+                              name="CreatedBy" />
+                            <externalMetadataColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input].ExternalColumns[TestAssignmentId]"
+                              dataType="i4"
+                              name="TestAssignmentId" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script"
+                      componentClassID="Microsoft.ManagedComponentHost"
+                      contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;9"
+                      description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
+                      name="SRC_SCR - SQL Script"
+                      version="10">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Stores the source code of the component"
+                          isArray="true"
+                          name="SourceCode"
+                          state="cdata">
+                          <arrayElements
+                            arrayElementCount="33">
+                            <arrayElement
+                              dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public SourceOutputBuffer SourceOutputBuffer;
+
+    public virtual void FinishOutputs()
+    {
+    }
+
+    private void MarkOutputsFinished()
+    {
+
+        if (null != SourceOutputBuffer)
+        {
+            SourceOutputBuffer.SetEndOfRowset();
+            SourceOutputBuffer = null;
+        }
+
+    }
+
+    public override void PrimeOutput(int Outputs, int[] OutputIDs, PipelineBuffer[] Buffers, OutputNameMap OutputMap)
+    {
+       for(int Idx = 0; Idx < Outputs; Idx++)
+       {
+            if(OutputIDs[Idx] == GetOutputID(OutputMap, @"SourceOutput"))
+            {
+                SourceOutputBuffer = new SourceOutputBuffer(Buffers[Idx], GetColumnIndexes(OutputIDs[Idx]), OutputMap);
+            }
+        }
+
+        CreateNewOutputRows();
+
+        FinishOutputs();
+        MarkOutputsFinished();
+
+    }
+
+    public virtual void CreateNewOutputRows()
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public String TestCommandText
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadOnlyVariables["Test_CommandText"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+    }
+
+    public String TestConnectionString
+    {
+        get
+        {
+            return (String)(ParentComponent.ReadOnlyVariables["Test_ConnectionString"].GetValueWithContext(ScriptComponent.EvaluatorContext));
+        }
+    }
+
+}
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[main.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[#region Help:  Introduction to the Script Component
+/* The Script Component allows you to perform virtually any operation that can be accomplished in
+ * a .Net application within the context of an Integration Services data flow.
+ *
+ * Expand the other regions which have "Help" prefixes for examples of specific ways to use
+ * Integration Services features within this script component. */
+#endregion
+
+#region Namespaces
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+using System.Data.SqlClient;
+using SC_b4ba1ccfae5e4763b810dddc88f6931e;
+#endregion
+
+/// <summary>
+/// This is the class to which to add your code.  Do not change the name, attributes, or parent
+/// of this class.
+/// </summary>
+[Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
+public class ScriptMain : UserComponent
+{
+    #region Help:  Using Integration Services variables and parameters
+    /* To use a variable in this script, first ensure that the variable has been added to
+     * either the list contained in the ReadOnlyVariables property or the list contained in
+     * the ReadWriteVariables property of this script component, according to whether or not your
+     * code needs to write into the variable.  To do so, save this script, close this instance of
+     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
+     * Script Transformation Editor window.
+     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
+     *
+     * Example of reading from a variable or parameter:
+     *  DateTime startTime = Variables.MyStartTime;
+     *
+     * Example of writing to a variable:
+     *  Variables.myStringVariable = "new value";
+     */
+    #endregion
+
+    #region Help:  Using Integration Services Connnection Managers
+    /* Some types of connection managers can be used in this script component.  See the help topic
+     * "Working with Connection Managers Programatically" for details.
+     *
+     * To use a connection manager in this script, first ensure that the connection manager has
+     * been added to either the list of connection managers on the Connection Managers page of the
+     * script component editor.  To add the connection manager, save this script, close this instance of
+     * Visual Studio, and add the Connection Manager to the list.
+     *
+     * If the component needs to hold a connection open while processing rows, override the
+     * AcquireConnections and ReleaseConnections methods.
+     * 
+     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
+     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
+     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
+     *
+     * Example of using a File connection manager to acquire a file path:
+     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
+     *  string filePath = (string)rawConnection;
+     *
+     * Example of releasing a connection manager:
+     *  Connections.SalesDB.ReleaseConnection(rawConnection);
+     */
+    #endregion
+
+    #region Help:  Firing Integration Services Events
+    /* This script component can fire events.
+     *
+     * Example of firing an error event:
+     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
+     *
+     * Example of firing an information event:
+     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
+     *
+     * Example of firing a warning event:
+     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
+     */
+    #endregion
+
+    /// <summary>
+    /// This method is called once, before rows begin to be processed in the data flow.
+    ///
+    /// You can remove this method if you don't need to do anything here.
+    /// </summary>
+    public override void PreExecute()
+    {
+        base.PreExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    /// <summary>
+    /// This method is called after all the rows have passed through this component.
+    ///
+    /// You can delete this method if you don't need to do anything here.
+    /// </summary>
+    public override void PostExecute()
+    {
+        base.PostExecute();
+        /*
+         * Add your code here
+         */
+    }
+
+    public override void CreateNewOutputRows()
+    {
+        bool isGrouped = false;
+        bool hasValueColumn = false;
+        bool hasGroupNameColumn = false;
+        string columnName = "";
+        /*
+          Add rows by calling the AddRow method on the member variable named "<Output Name>Buffer".
+          For example, call MyOutputBuffer.AddRow() if your output was named "MyOutput".
+        */
+
+        DataTable tbl = ExternalDataAccess.GetOleDbDataTable(Variables.TestConnectionString, Variables.TestCommandText);
+
+        // Checking for Value & Group Name columns. These are the columns that SSIS expects
+        foreach (DataColumn col in tbl.Columns)
+        {
+            if (col.ColumnName == "Value" || col.ColumnName == "[Measures].[Value]")
+            {
+                columnName = col.ColumnName == "Value" ? "Value" : "[Measures].[Value]";
+                hasValueColumn = true;
+            }
+
+            if (col.ColumnName == "GroupName")
+            {
+                hasGroupNameColumn = true;
+            }
+        }
+        // Check to see if there are two columns.  Probably don't need this with the above statement.
+        if (tbl.Columns.Count == 2)
+        {
+            isGrouped = true;
+        }
+
+        if (isGrouped && !hasGroupNameColumn)
+        {
+            throw new System.Exception("There are two columns returned, but missing the GroupName column name.  The query definition must contain columns [GroupName] and [Value].");
+        }
+
+        if (!hasValueColumn)
+        {
+            throw new System.Exception("Missing the column name [Value]. The query must contain a column named [Value].");
+        }
+
+        foreach (DataRow row in tbl.Rows)
+        {
+
+            SourceOutputBuffer.AddRow();
+
+            if (isGrouped == true)
+            {
+                SourceOutputBuffer.GroupName = row["GroupName"].ToString();
+            }
+
+
+            float _value;
+
+            if (columnName == "Value")
+            {
+                if (float.TryParse(row["Value"].ToString(), out _value))
+                {
+                    SourceOutputBuffer.Value = _value;
+                }
+                else
+                {
+                    SourceOutputBuffer.Value_IsNull = true;
+                }
+            }
+            else if (columnName == "[Measures].[Value]")
+            {
+                if (float.TryParse(row["[Measures].[Value]"].ToString(), out _value))
+                {
+                    SourceOutputBuffer.Value = _value;
+                }
+                else
+                {
+                    SourceOutputBuffer.Value_IsNull = true;
+                }
+            }
+
+        }
+
+    }
+
+}
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[BufferWrapper.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services buffer wrappers
+*  This module defines classes for accessing data flow buffers
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+
+public class SourceOutputBuffer: ScriptBuffer
+
+{
+    public SourceOutputBuffer(PipelineBuffer Buffer, int[] BufferColumnIndexes, OutputNameMap OutputMap)
+        : base(Buffer, BufferColumnIndexes, OutputMap)
+    {
+    }
+
+    public String GroupName
+    {
+        set
+        {
+            this[0] = value;
+        }
+    }
+    public bool GroupName_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(0);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    public Single Value
+    {
+        set
+        {
+            this[1] = value;
+        }
+    }
+    public bool Value_IsNull
+    {
+        set
+        {
+            if (value)
+            {
+                SetNull(1);
+            }
+            else
+            {
+                throw new InvalidOperationException("IsNull property cannot be set to False. Assign a value to the column instead.");
+            }
+        }
+    }
+
+    new public void AddRow()
+    {
+        base.AddRow();
+    }
+
+    new public void SetEndOfRowset()
+    {
+        base.SetEndOfRowset();
+    }
+
+    new public bool EndOfRowset()
+    {
+        return base.EndOfRowset();
+    }
+
+}
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Settings.get_Default():SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Sett" +
+    "ings")]
+
+namespace SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties {
+    
+    
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
+        [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+        private static Settings defaultInstance = new Settings();
+        
+        public static Settings Default {
+            get {
+                return defaultInstance;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[SC_b4ba1ccfae5e4763b810dddc88f6931e.csproj]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="utf-8"?><Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003"><PropertyGroup><ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids><Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform><ProductVersion>8.0.30703</ProductVersion><SchemaVersion>2.0</SchemaVersion><ProjectGuid>{31BDE323-A2D0-4D08-81F6-8CC4EE8A49AE}</ProjectGuid><OutputType>Library</OutputType><AppDesignerFolder>Properties</AppDesignerFolder><RootNamespace>SC_b4ba1ccfae5e4763b810dddc88f6931e</RootNamespace><AssemblyName>SC_7E7D50591E614B47A72DF1FEC98486BC</AssemblyName><TargetFrameworkVersion>v4.0</TargetFrameworkVersion><FileAlignment>512</FileAlignment><ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Debug' "><DebugSymbols>true</DebugSymbols><DebugType>full</DebugType><Optimize>false</Optimize><OutputPath>.\bin\Debug\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>DEBUG;TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><PropertyGroup Condition=" '$(Configuration)' == 'Release' "><DebugSymbols>false</DebugSymbols><Optimize>true</Optimize><OutputPath>.\bin\Release\</OutputPath><EnableUnmanagedDebugging>false</EnableUnmanagedDebugging><DefineConstants>TRACE</DefineConstants><ErrorReport>prompt</ErrorReport><WarningLevel>4</WarningLevel></PropertyGroup><ItemGroup><Reference Include="System" /><Reference Include="System.Data" /><Reference Include="System.Windows.Forms" /><Reference Include="System.Xml" /><Reference Include="Microsoft.SqlServer.TxScript, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.DTSRuntimeWrap, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.DTSPipelineWrap, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Reference Include="Microsoft.SqlServer.PipelineHost, Version=13.0.0.0, Culture=Neutral, PublicKeyToken=89845dcd8080cc91" /><Compile Include="ExternalDataAccess.cs" /><Compile Include="main.cs" /><Compile Include="BufferWrapper.cs" /><Compile Include="ComponentWrapper.cs" /></ItemGroup><ItemGroup><AppDesigner Include="Properties\" /><Compile Include="Properties\AssemblyInfo.cs"><SubType>Code</SubType></Compile><EmbeddedResource Include="Properties\Resources.resx"><Generator>ResXFileCodeGenerator</Generator><LastGenOutput>Resources.Designer.cs</LastGenOutput></EmbeddedResource><Compile Include="Properties\Resources.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Resources.resx</DependentUpon></Compile><None Include="Properties\Settings.settings"><Generator>SettingsSingleFileGenerator</Generator><LastGenOutput>Settings.Designer.cs</LastGenOutput></None><Compile Include="Properties\Settings.Designer.cs"><AutoGen>True</AutoGen><DependentUpon>Settings.settings</DependentUpon></Compile></ItemGroup><!-- Include the build rules for a C# project.--><Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" /><!-- This section defines VSTA properties that describe the host-changable project properties. --><ProjectExtensions><VisualStudio><FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}"><ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" /><Host Name="ScriptComponent" IconIndex="0" /><ProjectClient><HostIdentifier>SSIS_SC130</HostIdentifier></ProjectClient></FlavorProperties></VisualStudio></ProjectExtensions></Project>]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[ExternalDataAccess.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Data.OleDb;
+
+namespace SC_b4ba1ccfae5e4763b810dddc88f6931e
+{
+
+
+    public class ExternalDataAccess
+    {
+        public static DataTable GetSqlDataTable(string connectionString, string sqlQuery)
+        {
+            int startIndex;
+            int endIndex;
+
+            // Removing "Provider="
+            if (connectionString.ToUpper().Contains("PROVIDER="))
+            {
+                startIndex = connectionString.ToUpper().IndexOf("PROVIDER=");
+                endIndex = connectionString.IndexOf(";", startIndex) + 1;
+                connectionString = connectionString.Replace(connectionString.Substring(startIndex, (endIndex - startIndex)), "");
+            }
+
+            // Removing "Auto Translate="
+            if (connectionString.ToUpper().Contains("AUTO TRANSLATE="))
+            {
+
+                startIndex = connectionString.ToUpper().IndexOf("AUTO TRANSLATE=");
+                endIndex = connectionString.IndexOf(";", startIndex) + 1;
+                connectionString = connectionString.Replace(connectionString.Substring(startIndex, (endIndex - startIndex)), "");
+            }
+
+            DataTable results = new DataTable();
+            SqlConnection conn = new SqlConnection(connectionString);
+            SqlCommand cmd = new SqlCommand(sqlQuery, conn);
+            
+            conn.Open();
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            da.Fill(results);
+            conn.Close();
+            da.Dispose();
+            return results;
+        }
+
+        public static DataTable GetOleDbDataTable(string connectionString, string sqlQuery)
+        {
+
+            DataTable results = new DataTable();
+            OleDbConnection conn = new OleDbConnection(connectionString);
+            OleDbCommand cmd = new OleDbCommand(sqlQuery, conn);
+
+            cmd.CommandTimeout = 600;
+ 
+            conn.Open();
+
+            OleDbDataAdapter da = new OleDbDataAdapter(cmd);
+            da.Fill(results);
+            conn.Close();
+            da.Dispose();
+            return results;
+        }
+
+    }
+
+
+}
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Project]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+	<msb:PropertyGroup>
+		<msb:Language>msBuild</msb:Language>
+		<msb:CodeName>SC_b4ba1ccfae5e4763b810dddc88f6931e</msb:CodeName>
+		<msb:DisplayName>SC_b4ba1ccfae5e4763b810dddc88f6931e</msb:DisplayName>
+		<msb:ProjectId>{35C7AD3D-65AA-4676-B313-E8C48879A2BF}</msb:ProjectId>
+	</msb:PropertyGroup>
+	<msb:ItemGroup>
+		<msb:Project Include="SC_b4ba1ccfae5e4763b810dddc88f6931e.csproj"/>
+		<msb:File Include="Properties\Settings.settings"/>
+		<msb:File Include="Properties\AssemblyInfo.cs"/>
+		<msb:File Include="Properties\Resources.resx"/>
+		<msb:File Include="Properties\Resources.Designer.cs"/>
+		<msb:File Include="main.cs"/>
+		<msb:File Include="BufferWrapper.cs"/>
+		<msb:File Include="Properties\Settings.Designer.cs"/>
+		<msb:File Include="ComponentWrapper.cs"/>
+		<msb:File Include="ExternalDataAccess.cs"/>
+	</msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_b4ba1ccfae5e4763b810dddc88f6931e")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_b4ba1ccfae5e4763b810dddc88f6931e")]
+[assembly: AssemblyCopyright("Copyright @  2016")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[//------------------------------------------------------------------------------
+// <auto-generated>
+//     This code was generated by a tool.
+//
+//     Changes to this file may cause incorrect behavior and will be lost if
+//     the code is regenerated.
+// </auto-generated>
+//------------------------------------------------------------------------------
+
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+    "rceManager")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+    "fo")]
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+    "):Void")]
+
+namespace SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties {
+    
+    
+    /// <summary>
+    ///   A strongly-typed resource class, for looking up localized strings, etc.
+    /// </summary>
+    // This class was auto-generated by the StronglyTypedResourceBuilder
+    // class via a tool like ResGen or Visual Studio.
+    // To add or remove a member, edit your .ResX file then rerun ResGen
+    // with the /str option, or rebuild your VS project.
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    internal class Resources {
+        
+        private static global::System.Resources.ResourceManager resourceMan;
+        
+        private static global::System.Globalization.CultureInfo resourceCulture;
+        
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        internal Resources() {
+        }
+        
+        /// <summary>
+        ///   Returns the cached ResourceManager instance used by this class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if ((resourceMan == null)) {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_b4ba1ccfae5e4763b810dddc88f6931e.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                }
+                return resourceMan;
+            }
+        }
+        
+        /// <summary>
+        ///   Overrides the current thread's CurrentUICulture property for all
+        ///   resource lookups using this strongly typed resource class.
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
+                return resourceCulture;
+            }
+            set {
+                resourceCulture = value;
+            }
+        }
+    }
+}
+]]></arrayElement>
+                          </arrayElements>
+                        </property>
+                        <property
+                          dataType="System.String"
+                          description="Stores the binary representation of the component"
+                          isArray="true"
+                          name="BinaryCode"
+                          state="cdata">
+                          <arrayElements
+                            arrayElementCount="2">
+                            <arrayElement
+                              dataType="System.String"><![CDATA[SC_7E7D50591E614B47A72DF1FEC98486BC.dll]]></arrayElement>
+                            <arrayElement
+                              dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAKuah1oAAAAAAAAAAOAAIiALATAAACAAAAAIAAAAAAAAEj4A
+AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAEAAAAAAAAAACAAAAAAgAAAAAAAAMAQIUAABAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAAMA9AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAGB4AAAAgAAAAIAAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAiAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAKAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAAD0
+PQAAAAAAAEgAAAACAAUAZCUAAKQXAAABAAAAAAAAAAg9AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACiobMAMA6QEAAAEAABEWChYLFgxy
+AQAAcA0CewIAAARvFQAABgJ7AgAABG8UAAAGKBcAAAYTBBEEbxIAAApvEwAAChMFK2sRBW8UAAAK
+dBAAAAETBhEGbxUAAApyAwAAcCgWAAAKLRMRBm8VAAAKcg8AAHAoFgAACiwiEQZvFQAACnIDAABw
+KBYAAAotB3IPAABwKwVyAwAAcA0XCxEGbxUAAApyNQAAcCgWAAAKLAIXDBEFbxcAAAotjN4VEQV1
+EQAAARMHEQcsBxEHbxgAAArcEQRvEgAACm8ZAAAKGDMCFwoGLA4ILQtySQAAcHMaAAAKegctC3Jg
+AQBwcxoAAAp6EQRvGwAACm8TAAAKEwU4vgAAABEFbxQAAAp0EgAAARMIAnsDAAAEbwoAAAYGLBwC
+ewMAAAQRCHI1AABwbxwAAApvHQAACm8GAAAGCXIDAABwKBYAAAosNxEIcgMAAHBvHAAACm8dAAAK
+EgkoHgAACiwPAnsDAAAEEQlvCAAABitQAnsDAAAEF28JAAAGK0IJcg8AAHAoFgAACiw1EQhyDwAA
+cG8cAAAKbx0AAAoSCSgeAAAKLA8CewMAAAQRCW8IAAAGKwwCewMAAAQXbwkAAAYRBW8XAAAKOjb/
+///eFREFdREAAAETBxEHLAcRB28YAAAK3CoAAAABHAAAAgA3AHivABUAAAAAAgACAdHTARUAAAAA
+HgIoDQAABioqAgMEBSgfAAAKKiYCFgMoIAAACipaAywIAhYoIQAACipyAQIAcHMiAAAKejoCFwOM
+JgAAASggAAAKKloDLAgCFyghAAAKKnIBAgBwcyIAAAp6HgIoIwAACioeAigkAAAKKh4CKCUAAAoq
+fgIoJgAACgICcxIAAAZ9AQAABAICcxMAAAZ9AgAABCoGKm4CewMAAAQsEgJ7AwAABG8LAAAGAhR9
+AwAABCoTMAUASQAAAAIAABEWCisuBAaUDgRyngIAcCgnAAAKMxkCBQaaAgQGlCgoAAAKDgRzBQAA
+Bn0DAAAEBhdYCgYDMs4CbxEAAAYCbw4AAAYCKA8AAAYqOgIoKQAACgIDfQQAAAQqOgIoKQAACgID
+fQUAAAQqlgJ7BQAABG8qAAAKcrgCAHBvKwAACigsAAAKby0AAAp0IwAAASqWAnsFAAAEbyoAAApy
+2gIAcG8rAAAKKCwAAApvLQAACnQjAAABKgATMAUAxgAAAAMAABECby4AAApyBgMAcG8vAAAKLDcC
+by4AAApyBgMAcG8wAAAKCgJyGgMAcAZvMQAAChdYCwICBgcGWW8yAAAKcgEAAHBvMwAAChAAAm8u
+AAAKch4DAHBvLwAACiw3Am8uAAAKch4DAHBvMAAACgoCchoDAHAGbzEAAAoXWAsCAgYHBllvMgAA
+CnIBAABwbzMAAAoQAHM0AAAKDAJzNQAACg0DCXM2AAAKCW83AAAKczgAAAolCG85AAAKJglvOgAA
+Cm87AAAKCCoAABMwAwA/AAAABAAAEXM0AAAKCgJzPAAACgsDB3M9AAAKJSBYAgAAbz4AAAoHbzcA
+AApzPwAACiUGbzkAAAomB286AAAKbzsAAAoGKh4CKCkAAAoqrn4GAAAELR5yPgMAcNAIAAACKEAA
+AApvQQAACnNCAAAKgAYAAAR+BgAABCoafgcAAAQqHgKABwAABCoafggAAAQqHgIoQwAACioucx4A
+AAaACAAABCoAAABCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAACIBwAAI34AAPQH
+AACkCQAAI1N0cmluZ3MAAAAAmBEAALADAAAjVVMASBUAABAAAAAjR1VJRAAAAFgVAABMAgAAI0Js
+b2IAAAAAAAAAAgAAAVcVogEJAQAAAPoBMwAWAAABAAAANgAAAAkAAAAIAAAAHwAAABIAAABDAAAA
+EAAAAAQAAAAEAAAACQAAAAoAAAABAAAABgAAAAEAAAAAAF8EAQAAAAAABgARA8YGBgClA8YGBgBd
+ArMGDwA6BwAABgCKAiQFBgD0AiQFBgDVAiQFBgCMAyQFBgAxAyQFBgBKAyQFBgChAiQFBgC8AvID
+CgBlA3gBDgAaAXMABgCCBtEHDgDvBHMABgAkAcwEDgBwCXMACgD+BXgBEgDvBXgBCgC0BXgBCgCM
+CHgBBgA2CMwEDgBtBVgIDgBdBX8ABgBAArMGBgAiBuYGBgCoBQ8FFgAQAkkEFgBxAkkEFgDhAfoE
+BgAlAsYGDgA2BXMADgDGAXMABgA4BMwEBgCLBcwEDgBLBXMABgBUAcwEBgB7BcwEGgARADoGGgAB
+ADoGWwBACQAAGgAiADoGDgC7AFgIDgBgBZUFDgBzBlgIDgBlBpUFFgCSCEkEDgCuAH8ADgCxAJUF
+DgBiBn8ABgCZAcwEBgAwAcwEBgCDCSQFAAAAADoAAAAAAAEAAQABABAA5AQAABAAAQABAAEAEAAL
+BgAATQABAAUAAQAQAG4IAABZAAEADQABABAA5AcAAF0ABAASAAEAEACEBwAAXQAFABMAAQAQAPgH
+xgBdAAYAFgAAABAA7QZJB10ABgAZAAABEACzB0kHfQAIAB0ABgDkBxIBBgCEBxYBBgALBhoBAQB8
+CB4BAQB8CB4BEQDTBCIBEQC2ASYBEQDyACoBUCAAAAAAxgDDAwYAAQBYIAAAAADGAM4DBgABAGAg
+AAAAAMYAIggGAAEAdCIAAAAAhhicBgYAAQB8IgAAAACGGJwGYAABAIciAAAAAIYIagEQAAQAkSIA
+AAAAhgiMBC4BBQCoIgAAAACGCNoDMwEGALciAAAAAIYIoQQuAQcAziIAAAAAhgB4CQYACADWIgAA
+AACGAD0IBgAIAN4iAAAAAIYAQAhGAAgA5iIAAAAAhhicBgYACAAGIwAAAADGAQsIBgAIAAgjAAAA
+AIEAmgAGAAgAJCMAAAAAxgADCTgBCAAGIwAAAADGASIIBgAMAHkjAAAAAIYYnAZEAQwAiCMAAAAA
+hhicBkQBDQCXIwAAAACGCBgJPAAOAL0jAAAAAIYIDAQ8AA4A5CMAAAAAlgAUAUoBDgC4JAAAAACW
+AAIBSgEQAAMlAAAAAIYYnAYGABIAAyUAAAAAgxicBgYAEgALJQAAAACTCB4GUQESADclAAAAAJMI
+ngFWARIAPiUAAAAAkwiqAVsBEgBGJQAAAACWCEwIYQETAE0lAAAAAIYYnAYGABMAVSUAAAAAkRii
+BmYBEwAAAAEAFwYAAAIAjgcAAAMAwgUAAAEA5AMAAAEA5AMAAAEA5AMAAAEA5AMAAAEAEQgAAAIA
+qQYAAAMA8AcAAAQAwgUAAAEAkggAAAEAkggAAAEAJQQAAAIAjAkAAAEAJQQAAAIAjAkAAAEA5AMJ
+AJwGAQARAJwGBgAZAJwGCgApAJwGEAAxAJwGEAA5AJwGEABBAJwGEABJAJwGEABRAJwGEABZAJwG
+EABhAJwGEABpAJwGBgDRAJwGBgDxAJwGFQABAZwGBgCxAMMDBgCxAM4DBgBxAMUHLQARAY4GMwB5
+AJwIOACBAFsBPAAZAZUJQAB5AA8JRgCJAP8BBgARAagISgAhAZwGEABxABkITgCRALoEVAC5ADYE
+PAAxAQcCWQCZAJwGYACZAMMEagCZALIEAQA5AZwGEACZAHgJBgCZAD0IBgCZAEAIRgCxAJwGBgCx
+AGcAdACxAKIHewC5AJwGBgCxAHgHgQBBAboEhwCxAFsJjgBJASwJlAAZATIGPAAZAbwHpAAZAeoD
+qQAZAeoDrgAZAT8EtAAZAeoAugBxAJwGBgDBAJwGEABhAZwGwABpAd8EBgBxAZwGxwB5AYcEzgBp
+AfkBBgCBAf8BBgDJAJwGEACJAZwG2wCRAfAIAQCZAZwG4gChAUIB6QChAX8J8gDZAJwG+AD5AJwG
+BgAuAAsAhQEuABMAjgEuABsArQEuACMAtgEuACsA3wEuADMA3wEuADsA3wEuAEMAtgEuAEsA5QEu
+AFMA3wEuAFsA/AFDAGMARALpAHMArQEBAXsARAIDAWsARAIJAXMArQEbAHAAmwDUAAMAAQAGAAUA
+CAAHAAkACQAAAG4BagEAAJAEbgEAAN4DcgEAAKUEbgEAABwJagEAABAEagEAACIGdgEAAL4BewEA
+AFAIgAEBAAYAAwABAAcABQABAAgABwABAAkACQACABQACwACABUADQACABoADwACABsAEQABABwA
+EQACAB0AEwAEgAAAAQAAAAAAAAAAAAAAAABDAAAABAAAAAAAAAAAAAAAAAGRAAAAAAANAAAAAAAA
+AAAAAAAJAbIIAAAAAAQAAAAAAAAAAAAAAAABcwAAAAAADQAAAAAAAAAAAAAACQHPCAAAAAAEAAAA
+AAAAAAAAAAAAAcwEAAAAAA0AAAAAAAAAAAAAAAkBzAUAAAAAAAAAAAEAAAD3BgAAAAAAAABJRFRT
+VmFyaWFibGUxMDAASURUU1ZhcmlhYmxlczEwMABJRFRTRXZhbHVhdG9yQ29udGV4dDEwMAA8TW9k
+dWxlPgBTQ183RTdENTA1OTFFNjE0QjQ3QTcyREYxRkVDOTg0ODZCQwBHZXRPdXRwdXRJRABTeXN0
+ZW0uRGF0YQBTeXN0ZW0uRGF0YS5PbGVEYgBtc2NvcmxpYgBNYXJrT3V0cHV0c0ZpbmlzaGVkAE9s
+ZURiQ29tbWFuZABTcWxDb21tYW5kAFNDX2I0YmExY2NmYWU1ZTQ3NjNiODEwZGRkYzg4ZjY5MzFl
+AFJlcGxhY2UAZGVmYXVsdEluc3RhbmNlAEdldE9sZURiRGF0YVRhYmxlAEdldFNxbERhdGFUYWJs
+ZQBJRGlzcG9zYWJsZQBSdW50aW1lVHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBTaW5nbGUA
+Z2V0X0NvbHVtbk5hbWUAc2V0X0dyb3VwTmFtZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBl
+bGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBJbnRlcm5h
+bERhdGFDb2xsZWN0aW9uQmFzZQBBcHBsaWNhdGlvblNldHRpbmdzQmFzZQBDbG9zZQBEaXNwb3Nl
+AFRyeVBhcnNlAEVkaXRvckJyb3dzYWJsZVN0YXRlAENvbXBpbGVyR2VuZXJhdGVkQXR0cmlidXRl
+AERlYnVnZ2VyTm9uVXNlckNvZGVBdHRyaWJ1dGUARGVidWdnYWJsZUF0dHJpYnV0ZQBFZGl0b3JC
+cm93c2FibGVBdHRyaWJ1dGUAQXNzZW1ibHlUaXRsZUF0dHJpYnV0ZQBBc3NlbWJseVRyYWRlbWFy
+a0F0dHJpYnV0ZQBUYXJnZXRGcmFtZXdvcmtBdHRyaWJ1dGUAQXNzZW1ibHlDb25maWd1cmF0aW9u
+QXR0cmlidXRlAEFzc2VtYmx5RGVzY3JpcHRpb25BdHRyaWJ1dGUAQ29tcGlsYXRpb25SZWxheGF0
+aW9uc0F0dHJpYnV0ZQBBc3NlbWJseVByb2R1Y3RBdHRyaWJ1dGUAQXNzZW1ibHlDb3B5cmlnaHRB
+dHRyaWJ1dGUAU1NJU1NjcmlwdENvbXBvbmVudEVudHJ5UG9pbnRBdHRyaWJ1dGUAQXNzZW1ibHlD
+b21wYW55QXR0cmlidXRlAFJ1bnRpbWVDb21wYXRpYmlsaXR5QXR0cmlidXRlAFByZUV4ZWN1dGUA
+UG9zdEV4ZWN1dGUAc2V0X1ZhbHVlAHZhbHVlAEluZGV4T2YAU3lzdGVtLlJ1bnRpbWUuVmVyc2lv
+bmluZwBnZXRfVGVzdENvbm5lY3Rpb25TdHJpbmcAY29ubmVjdGlvblN0cmluZwBUb1N0cmluZwBT
+dWJzdHJpbmcAU3lzdGVtLkNvbXBvbmVudE1vZGVsAFNDXzdFN0Q1MDU5MUU2MTRCNDdBNzJERjFG
+RUM5ODQ4NkJDLmRsbABGaWxsAHNldF9Hcm91cE5hbWVfSXNOdWxsAHNldF9WYWx1ZV9Jc051bGwA
+U2V0TnVsbABnZXRfSXRlbQBzZXRfSXRlbQBTeXN0ZW0AcmVzb3VyY2VNYW4AT3BlbgBTY3JpcHRN
+YWluAERhdGFDb2x1bW4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24A
+U3lzdGVtLlJlZmxlY3Rpb24ARGF0YUNvbHVtbkNvbGxlY3Rpb24ARGF0YVJvd0NvbGxlY3Rpb24A
+T2xlRGJDb25uZWN0aW9uAFNxbENvbm5lY3Rpb24ASW52YWxpZE9wZXJhdGlvbkV4Y2VwdGlvbgBT
+eXN0ZW0uRGF0YS5Db21tb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAATWlj
+cm9zb2Z0LlNxbFNlcnZlci5EVFNSdW50aW1lV3JhcABQaXBlbGluZUJ1ZmZlcgBTY3JpcHRCdWZm
+ZXIAU291cmNlT3V0cHV0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAVG9VcHBlcgBNaWNyb3Nv
+ZnQuU3FsU2VydmVyLkR0cy5SdW50aW1lLldyYXBwZXIAT2xlRGJEYXRhQWRhcHRlcgBTcWxEYXRh
+QWRhcHRlcgBJRW51bWVyYXRvcgBHZXRFbnVtZXJhdG9yAC5jdG9yAC5jY3RvcgBPdXRwdXRJRHMA
+U3lzdGVtLkRpYWdub3N0aWNzAFN5c3RlbS5SdW50aW1lLkNvbXBpbGVyU2VydmljZXMAU3lzdGVt
+LlJlc291cmNlcwBTQ19iNGJhMWNjZmFlNWU0NzYzYjgxMGRkZGM4OGY2OTMxZS5Qcm9wZXJ0aWVz
+LlJlc291cmNlcy5yZXNvdXJjZXMARGVidWdnaW5nTW9kZXMAU0NfYjRiYTFjY2ZhZTVlNDc2M2I4
+MTBkZGRjODhmNjkzMWUuUHJvcGVydGllcwBnZXRfUmVhZE9ubHlWYXJpYWJsZXMAQnVmZmVyQ29s
+dW1uSW5kZXhlcwBHZXRDb2x1bW5JbmRleGVzAFNldHRpbmdzAENvbnRhaW5zAGdldF9Db2x1bW5z
+AFN5c3RlbS5Db2xsZWN0aW9ucwBDb25uZWN0aW9ucwBCdWZmZXJzAEV4dGVybmFsRGF0YUFjY2Vz
+cwBGaW5pc2hPdXRwdXRzAGdldF9Sb3dzAENyZWF0ZU5ld091dHB1dFJvd3MAT2JqZWN0AFNldEVu
+ZE9mUm93c2V0AGdldF9EZWZhdWx0AFN5c3RlbS5EYXRhLlNxbENsaWVudABVc2VyQ29tcG9uZW50
+AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQAZ2V0X0N1cnJlbnQAZ2V0X0NvdW50AE1p
+Y3Jvc29mdC5TcWxTZXJ2ZXIuVHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhv
+c3QAc2V0X0NvbW1hbmRUaW1lb3V0AFByaW1lT3V0cHV0AE1vdmVOZXh0AGdldF9UZXN0Q29tbWFu
+ZFRleHQAR2V0VmFsdWVXaXRoQ29udGV4dABTY3JpcHRDb21wb25lbnRFdmFsQ29udGV4dABnZXRf
+RXZhbHVhdG9yQ29udGV4dABEYXRhUm93AEFkZFJvdwBnZXRfQXNzZW1ibHkAc3FsUXVlcnkAb3Bf
+RXF1YWxpdHkAAAAAAAEAC1YAYQBsAHUAZQAAJVsATQBlAGEAcwB1AHIAZQBzAF0ALgBbAFYAYQBs
+AHUAZQBdAAATRwByAG8AdQBwAE4AYQBtAGUAAIEVVABoAGUAcgBlACAAYQByAGUAIAB0AHcAbwAg
+AGMAbwBsAHUAbQBuAHMAIAByAGUAdAB1AHIAbgBlAGQALAAgAGIAdQB0ACAAbQBpAHMAcwBpAG4A
+ZwAgAHQAaABlACAARwByAG8AdQBwAE4AYQBtAGUAIABjAG8AbAB1AG0AbgAgAG4AYQBtAGUALgAg
+ACAAVABoAGUAIABxAHUAZQByAHkAIABkAGUAZgBpAG4AaQB0AGkAbwBuACAAbQB1AHMAdAAgAGMA
+bwBuAHQAYQBpAG4AIABjAG8AbAB1AG0AbgBzACAAWwBHAHIAbwB1AHAATgBhAG0AZQBdACAAYQBu
+AGQAIABbAFYAYQBsAHUAZQBdAC4AAICfTQBpAHMAcwBpAG4AZwAgAHQAaABlACAAYwBvAGwAdQBt
+AG4AIABuAGEAbQBlACAAWwBWAGEAbAB1AGUAXQAuACAAVABoAGUAIABxAHUAZQByAHkAIABtAHUA
+cwB0ACAAYwBvAG4AdABhAGkAbgAgAGEAIABjAG8AbAB1AG0AbgAgAG4AYQBtAGUAZAAgAFsAVgBh
+AGwAdQBlAF0ALgAAgJtJAHMATgB1AGwAbAAgAHAAcgBvAHAAZQByAHQAeQAgAGMAYQBuAG4AbwB0
+ACAAYgBlACAAcwBlAHQAIAB0AG8AIABGAGEAbABzAGUALgAgAEEAcwBzAGkAZwBuACAAYQAgAHYA
+YQBsAHUAZQAgAHQAbwAgAHQAaABlACAAYwBvAGwAdQBtAG4AIABpAG4AcwB0AGUAYQBkAC4AABlT
+AG8AdQByAGMAZQBPAHUAdABwAHUAdAAAIVQAZQBzAHQAXwBDAG8AbQBtAGEAbgBkAFQAZQB4AHQA
+ACtUAGUAcwB0AF8AQwBvAG4AbgBlAGMAdABpAG8AbgBTAHQAcgBpAG4AZwAAE1AAUgBPAFYASQBE
+AEUAUgA9AAADOwAAH0EAVQBUAE8AIABUAFIAQQBOAFMATABBAFQARQA9AABxUwBDAF8AYgA0AGIA
+YQAxAGMAYwBmAGEAZQA1AGUANAA3ADYAMwBiADgAMQAwAGQAZABkAGMAOAA4AGYANgA5ADMAMQBl
+AC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBzAABUJmXqWti8QpZ7hHvg
+wpscAAQgAQEIAyAAAQUgAQEREQQgAQEOBSABARF1EQcKAgICDhI5Ej0SQRJFEkkMBSAAEoCFBCAA
+Ej0DIAAcAyAADgUAAgIODgMgAAIDIAAIBSAAEoCVBCABHA4GAAICDhAMCSADARJRHQgSVQUgAgEI
+HAMHAQgGAAIIElUOBSABHQgIBSAAEoChBiABEoClHAUAABKAqQYgARwSgK0IBwQICBI5EmEEIAEC
+DgQgAQgOBSACCA4IBSACDggIBSACDg4OBiACAQ4SYQYgAQESgLEFIAEIEjkGBwISORJlBiACAQ4S
+ZQYgAQESgMUIAAESgNERgNUFIAASgNkHIAIBDhKA2Qi3elxWGTTgiQiJhF3NgIDMkQMGEhQDBhIY
+AwYSDAMGElkDBhJtAwYScQMGEiQEIAEBAgQgAQEMCyAEAQgdCB0SURJVBSABARJZBgACEjkODgQA
+ABJtBAAAEnEFAAEBEnEEAAASJAMAAAEDKAAOAygAAgMoAAwECAASbQQIABJxBAgAEiQIAQAIAAAA
+AAAeAQABAFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDX2I0YmExY2Nm
+YWU1ZTQ3NjNiODEwZGRkYzg4ZjY5MzFlAAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTYAAEcB
+ABouTkVURnJhbWV3b3JrLFZlcnNpb249djQuMAEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUQLk5F
+VCBGcmFtZXdvcmsgNAQBAAAAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJl
+c291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWws
+IFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1l
+UmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAAOg9AAAAAAAAAAAAAAI+AAAAIAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAD0PQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAA
+AAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAQ
+AAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAAAFhA
+AADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAAvQTv
+/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAABAFYA
+YQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAA
+ALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAwADQA
+YgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkATgBh
+AG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABTAEMA
+XwBiADQAYgBhADEAYwBjAGYAYQBlADUAZQA0ADcANgAzAGIAOAAxADAAZABkAGQAYwA4ADgAZgA2
+ADkAMwAxAGUAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAA
+AABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADcARQA3AEQANQAwADUAOQAx
+AEUANgAxADQAQgA0ADcAQQA3ADIARABGADEARgBFAEMAOQA4ADQAOAA2AEIAQwAuAGQAbABsAAAA
+SAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQAIABA
+ACAAIAAyADAAMQA2AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAAAAAA
+AAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANwBFADcARAA1
+ADAANQA5ADEARQA2ADEANABCADQANwBBADcAMgBEAEYAMQBGAEUAQwA5ADgANAA4ADYAQgBDAC4A
+ZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfAGIANABiAGEAMQBj
+AGMAZgBhAGUANQBlADQANwA2ADMAYgA4ADEAMABkAGQAZABjADgAOABmADYAOQAzADEAZQAAADQA
+CAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgAAQBB
+AHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAFD4AAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+                          </arrayElements>
+                        </property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
+                          name="VSTAProjectName"
+                          typeConverter="NOTBROWSABLE">SC_7e7d50591e614b47a72df1fec98486bc</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the programming language used by the script."
+                          name="ScriptLanguage"
+                          typeConverter="Microsoft.SqlServer.VSTAHosting.ScriptingLanguages">CSharp</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies a comma-separated list of read-only variables."
+                          name="ReadOnlyVariables"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIVariablePickerDlg">User::Test_CommandText,User::Test_ConnectionString</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies a comma-separated list of read/write variables."
+                          name="ReadWriteVariables"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ScriptUIWriteableVariablePickerDlg"></property>
+                        <property
+                          dataType="System.String"
+                          description="List of breakpoints present on the script."
+                          isArray="true"
+                          name="BreakpointCollection"
+                          typeConverter="NOTBROWSABLE">
+                          <arrayElements
+                            arrayElementCount="0" />
+                        </property>
+                        <property
+                          dataType="System.String"
+                          description="Checksum to match component metedata against compiled codes."
+                          name="MetadataChecksum"
+                          typeConverter="NOTBROWSABLE">7e2afac94969a768ba30346380660e75</property>
+                        <property
+                          dataType="System.String"
+                          name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
+                        <property
+                          dataType="System.String"
+                          description="Checksum to match component metedata against compiled codes."
+                          name="MetadataShaChecksum"
+                          typeConverter="NOTBROWSABLE">1ebd53f79b20a05111b5fbec52cec20a8de12fea</property>
+                      </properties>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput]"
+                          hasSideEffects="true"
+                          name="SourceOutput">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]"
+                              codePage="1252"
+                              dataType="str"
+                              length="500"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]"
+                              name="GroupName" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[Value]"
+                              dataType="r4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[Value]"
+                              name="Value" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All"
+                      componentClassID="Microsoft.UnionAll"
+                      contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+                      name="Union All"
+                      version="1">
+                      <inputs>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1]"
+                          name="Union All Input 1">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[Value]"
+                              cachedDataType="r4"
+                              cachedName="Value"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[Value]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[Value]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[GroupName]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="500"
+                              cachedName="GroupName"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[GroupName]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[TestAssignmentId]"
+                              cachedDataType="i4"
+                              cachedName="TestAssignmentId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestAssignmentId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestAssignmentId]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[TestExecutionId]"
+                              cachedDataType="i8"
+                              cachedName="TestExecutionId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestExecutionId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestExecutionId]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[StopDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StopDateTime"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StopDateTime]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StopDateTime]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[StartDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StartDateTime"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StartDateTime]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StartDateTime]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1].Columns[ResultGroupId]"
+                              cachedDataType="i4"
+                              cachedName="ResultGroupId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[ResultGroupId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[ResultGroupId]}</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2]"
+                          hasSideEffects="true"
+                          name="Union All Input 2">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[Value]"
+                              cachedDataType="r4"
+                              cachedName="Value"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[Value]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[Value]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[GroupName]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="500"
+                              cachedName="GroupName"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput].Columns[GroupName]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[GroupName]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[TestAssignmentId]"
+                              cachedDataType="i4"
+                              cachedName="TestAssignmentId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestAssignmentId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestAssignmentId]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[TestExecutionId]"
+                              cachedDataType="i8"
+                              cachedName="TestExecutionId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[TestExecutionId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestExecutionId]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[StopDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StopDateTime"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StopDateTime]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StopDateTime]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[StartDateTime]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="StartDateTime"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output].Columns[StartDateTime]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StartDateTime]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2].Columns[ResultGroupId]"
+                              cachedDataType="i4"
+                              cachedName="ResultGroupId"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Match Output].Columns[ResultGroupId]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[ResultGroupId]}</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                        <input
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 3]"
+                          dangling="true"
+                          hasSideEffects="true"
+                          name="Union All Input 3">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1]"
+                          name="Union All Output 1">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[Value]"
+                              dataType="r4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[Value]"
+                              name="Value" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[GroupName]"
+                              codePage="1252"
+                              dataType="str"
+                              length="500"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[GroupName]"
+                              name="GroupName" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestAssignmentId]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestAssignmentId]"
+                              name="TestAssignmentId" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestExecutionId]"
+                              dataType="i8"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[TestExecutionId]"
+                              name="TestExecutionId" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StopDateTime]"
+                              dataType="dbTimeStamp"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StopDateTime]"
+                              name="StopDateTime" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StartDateTime]"
+                              dataType="dbTimeStamp"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[StartDateTime]"
+                              name="StartDateTime" />
+                            <outputColumn
+                              refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[ResultGroupId]"
+                              dataType="i4"
+                              lineageId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1].Columns[ResultGroupId]"
+                              name="ResultGroupId" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Derived Column Output]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Inputs[Lookup Input]"
+                      name="Derived Column Output"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Outputs[Derived Column Output]" />
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Lookup Match Output]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 2]"
+                      name="Lookup Match Output"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup Match Output]" />
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Lookup No Match Output]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Inputs[OLE DB Command Input]"
+                      name="Lookup No Match Output"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName.Outputs[Lookup No Match Output]" />
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[OLE DB Command Output]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Inputs[Union All Input 1]"
+                      name="OLE DB Command Output"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group.Outputs[OLE DB Command Output]" />
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[SourceOutput]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values.Inputs[Derived Column Input]"
+                      name="SourceOutput"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script.Outputs[SourceOutput]" />
+                    <path
+                      refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Union All Output 1]"
+                      endId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult.Inputs[OLE DB Destination Input]"
+                      name="Union All Output 1"
+                      startId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All.Outputs[Union All Output 1]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\SQL - SYSTEMDATETIME"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{a09c255c-9b88-4bfc-aaf2-22ed243c1821}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="SQL - SYSTEMDATETIME"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="0">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}"
+                  SQLTask:SqlStatementSource="SELECT SYSDATETIME() [SysDateTime]"
+                  SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ResultBinding
+                    SQLTask:ResultName="0"
+                    SQLTask:DtsVariableName="User::Test_StartDateTime" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\FELC - Loop Each Test in Group\FELC - Load results for each test.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{46ff1e92-da19-4f5a-9b4a-670ad87ee61b}"
+              DTS:From="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\SQL - SYSTEMDATETIME"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results" />
+          </DTS:PrecedenceConstraints>
+          <DTS:ForEachVariableMappings>
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{407E1F07-95B0-40D7-B439-88E891E636B9}"
+              DTS:ObjectName="{407E1F07-95B0-40D7-B439-88E891E636B9}"
+              DTS:ValueIndex="1"
+              DTS:VariableName="User::Test_ConnectionString" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{E4E2F871-CA8A-4FA5-9FAE-2E8C3FC58A1C}"
+              DTS:ObjectName="{E4E2F871-CA8A-4FA5-9FAE-2E8C3FC58A1C}"
+              DTS:ValueIndex="2"
+              DTS:VariableName="User::Test_CommandText" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D06C5F62-E313-4B93-83B8-D295CAE28DC7}"
+              DTS:ObjectName="{D06C5F62-E313-4B93-83B8-D295CAE28DC7}"
+              DTS:ValueIndex="0"
+              DTS:VariableName="User::Test_TestAssignmentId" />
+          </DTS:ForEachVariableMappings>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\FELC - Loop Each Test in Group\SQL - Get Test Details"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{c373b9b0-dff3-4c0a-9126-7624e1942a75}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL - Get Test Details"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}"
+              SQLTask:SqlStatementSource="EXEC data_testing.[GetTestDetails] ?"
+              SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ResultBinding
+                SQLTask:ResultName="0"
+                SQLTask:DtsVariableName="User::Test_Details" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::TestDefinitionId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\FELC - Loop Each Test in Group\SQL - Start Test Execution"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{25e1ecca-2820-4fb8-931e-89564cf1f555}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL - Start Test Execution"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}"
+              SQLTask:SqlStatementSource="EXEC data_testing.StartTestExecution @TestExecutionId = ? OUT" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::Test_ExecutionId"
+                SQLTask:ParameterDirection="Output"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\FELC - Loop Each Test in Group\SQL - Stop Test Execution"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{1b310d8c-587a-4db5-aa4a-d895adf481b0}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL - Stop Test Execution"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}"
+              SQLTask:SqlStatementSource="EXEC data_testing.StopTestExecution @TestExecutionId = ?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::Test_ExecutionId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{467a41cd-29c3-4e09-9f79-ecdc0c2a0488}"
+          DTS:From="Package\FELC - Loop Each Test in Group\SQL - Start Test Execution"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\FELC - Loop Each Test in Group\FELC - Load results for each test" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{afc76397-3569-42d0-868c-50fc2fdc6f12}"
+          DTS:From="Package\FELC - Loop Each Test in Group\SQL - Get Test Details"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\FELC - Loop Each Test in Group\SQL - Start Test Execution" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint 2]"
+          DTS:CreationName=""
+          DTS:DTSID="{541b95bc-48ee-436b-86d8-0aee19977baf}"
+          DTS:From="Package\FELC - Loop Each Test in Group\FELC - Load results for each test"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 2"
+          DTS:To="Package\FELC - Loop Each Test in Group\SQL - Stop Test Execution" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{416B8D65-1B67-475C-A1E5-9A208EC0C4CC}"
+          DTS:ObjectName="{416B8D65-1B67-475C-A1E5-9A208EC0C4CC}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::TestDefinitionId" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Get all Tests From Group"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{D309C1F4-32A9-4A04-BF7F-A29F696A49AA}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Get all Tests From Group"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2014; © 2014 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{0B1D7679-A1B9-4332-B45B-7A1A685630AD}"
+          SQLTask:SqlStatementSource="EXEC [data_testing].[GetAllTestsFromGroup] @TestGroupName = ?"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::TestList" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::TestGroupName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{B8D910DD-0258-4C9F-AA2D-905D0B2296D4}"
+      DTS:From="Package\SQL - Get all Tests From Group"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\FELC - Loop Each Test in Group" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="182,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results"
+          TopLeft="14,88.5" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\SQL - SYSTEMDATETIME"
+          TopLeft="5.5,21.5" />
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test.PrecedenceConstraints[Constraint]"
+          TopLeft="104.5,63.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,25"
+              Start="0,0"
+              End="0,17.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="208,168"
+          Size="208,211"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test"
+          TopLeft="455.5,27.5" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\FELC - Loop Each Test in Group\SQL - Get Test Details"
+          TopLeft="21,109.5" />
+        <NodeLayout
+          Size="203,42"
+          Id="Package\FELC - Loop Each Test in Group\SQL - Start Test Execution"
+          TopLeft="228.5,112.5" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\FELC - Loop Each Test in Group\SQL - Stop Test Execution"
+          TopLeft="712,104.5" />
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint]"
+          TopLeft="431.5,133.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24,0"
+              Start="0,0"
+              End="16.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="16.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint 1]"
+          TopLeft="204,132">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="24.5,0"
+              Start="0,0"
+              End="17,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="17,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group.PrecedenceConstraints[Constraint 2]"
+          TopLeft="663.5,129.25">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="48.5,0"
+              Start="0,0"
+              End="41,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="41,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="920,294"
+          Size="920,336"
+          Id="Package\FELC - Loop Each Test in Group"
+          TopLeft="271,187.5" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\SQL - Get all Tests From Group"
+          TopLeft="3.5,329.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="229.5,353">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="41.5,0"
+              Start="0,0"
+              End="34,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="34,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="209,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLECMD - AddResult Group"
+          TopLeft="171.833333333333,311.5" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult"
+          TopLeft="6.83333333333341,515.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\SRC_SCR - SQL Script"
+          TopLeft="20.1666666666667,5.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\Union All"
+          TopLeft="50.8333333333334,413.5" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName"
+          TopLeft="5.50000000000001,209.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\DRV - Package Values"
+          TopLeft="20.1666666666667,107.5" />
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[OLE DB Command Output]"
+          TopLeft="276.166666666667,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-146.222222222222,60"
+              Start="0,0"
+              End="-146.222222222222,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5288985823337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5288985823337"
+                    Point2="0,35.5288985823337"
+                    Point3="-4,35.5288985823337" />
+                  <mssgle:LineSegment
+                    End="-142.222222222222,35.5288985823337" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-142.222222222222,35.5288985823337"
+                    Point2="-146.222222222222,35.5288985823337"
+                    Point3="-146.222222222222,39.5288985823337" />
+                  <mssgle:LineSegment
+                    End="-146.222222222222,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Lookup No Match Output]"
+          TopLeft="145.055555555556,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="131.111111111111,60"
+              Start="0,0"
+              End="131.111111111111,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2705072010019" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2705072010019"
+                    Point2="0,24.2705072010019"
+                    Point3="4,24.2705072010019" />
+                  <mssgle:LineSegment
+                    End="127.111111111111,24.2705072010019" />
+                  <mssgle:CubicBezierSegment
+                    Point1="127.111111111111,24.2705072010019"
+                    Point2="131.111111111111,24.2705072010019"
+                    Point3="131.111111111111,28.2705072010019" />
+                  <mssgle:LineSegment
+                    End="131.111111111111,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="9.7491688368055,29.2705072010019,111.6127734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Lookup Match Output]"
+          TopLeft="77.2777777777778,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.1111111111112,162"
+              Start="0,0"
+              End="15.1111111111112,154.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,76.4386370199249" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,76.4386370199249"
+                    Point2="0,80.4386370199249"
+                    Point3="4,80.4386370199249" />
+                  <mssgle:LineSegment
+                    End="11.1111111111112,80.4386370199249" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.1111111111112,80.4386370199249"
+                    Point2="15.1111111111112,80.4386370199249"
+                    Point3="15.1111111111112,84.4386370199249" />
+                  <mssgle:LineSegment
+                    End="15.1111111111112,154.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-40.6358311631944,85.4386370199249,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Derived Column Output]"
+          TopLeft="111.166666666667,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[Union All Output 1]"
+          TopLeft="111.166666666667,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results.Paths[SourceOutput]"
+          TopLeft="111.166666666667,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\OLE_DST - ExecutionResult">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\FELC - Loop Each Test in Group\FELC - Load results for each test\DFT - Loading Results\LKP - Check for GroupName">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[data_testing].[ResultGroup]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="3669ed90-c88a-4a52-bcd1-8260304ea6b6" ChangeDateTime="02/14/2018 23:06:18">
+    <Property Name="ElementName" Value="[data_testing].[TestConnectionQueryMapping]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[data_testing]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TestAssignment]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="718fab6a-4c04-4000-9a92-81c80d961cb7" ChangeDateTime="02/17/2018 01:29:33">
+    <Property Name="ElementName" Value="[data_testing].[TestAssignment].[ConnectionTestQueryId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[data_testing].[TestAssignment]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TestAssignmentId]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="e4d1dc73-c662-4f4a-9587-a1bb3191f310" ChangeDateTime="02/17/2018 01:33:44">
+    <Property Name="ElementName" Value="[data_testing].[TestExecutionStatus]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[data_testing]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TestExecutionStatusType]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ed64f381-9e7e-4476-b731-d8291bf10fa8" ChangeDateTime="02/17/2018 01:42:11">
+    <Property Name="ElementName" Value="[data_testing].[TestGroupMapping]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[data_testing]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TestGroupAssignment]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bc24d029-6005-4619-99d9-4422547df2c1" ChangeDateTime="03/10/2018 03:21:29">
+    <Property Name="ElementName" Value="[data_testing].[TestExecution].[SuccessfulResultCount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[data_testing].[TestExecution]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SuccessfulResultGroups" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="14c06940-2052-48df-9522-030ed2cd7870" ChangeDateTime="03/10/2018 03:21:41">
+    <Property Name="ElementName" Value="[data_testing].[TestExecution].[FailedResultCount]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[data_testing].[TestExecution]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FailedResultGroups" />
+  </Operation>
+</Operations>

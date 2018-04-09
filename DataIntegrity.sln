@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "DataIntegrityCheck.SSIS", "DataIntegrityCheck.SSIS\DataIntegrity.SSIS.dtproj", "{A6D8D202-8D74-4E6E-8F89-902C11D877A6}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DataIntegrityCheck.DB", "DataIntegrityCheck.DB\DataIntegrity.DB.sqlproj", "{377279C6-E40C-4457-9FDF-852647D2889C}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DataIntegrityCheck.SSRS", "DataIntegrityCheck.SSRS\DataIntegrity.SSRS.rptproj", "{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
+		Development|Any CPU = Development|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Debug|Any CPU.ActiveCfg = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Debug|Any CPU.Build.0 = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.DebugLocal|Any CPU.ActiveCfg = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.DebugLocal|Any CPU.Build.0 = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Development|Any CPU.ActiveCfg = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Development|Any CPU.Build.0 = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Release|Any CPU.ActiveCfg = Development
+		{A6D8D202-8D74-4E6E-8F89-902C11D877A6}.Release|Any CPU.Build.0 = Development
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.DebugLocal|Any CPU.Deploy.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Development|Any CPU.Build.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Development|Any CPU.Deploy.0 = Debug|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377279C6-E40C-4457-9FDF-852647D2889C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Debug|Any CPU.ActiveCfg = Debug
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Debug|Any CPU.Build.0 = Debug
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Debug|Any CPU.Deploy.0 = Debug
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Development|Any CPU.ActiveCfg = DebugLocal
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Development|Any CPU.Build.0 = DebugLocal
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Release|Any CPU.ActiveCfg = Release
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Release|Any CPU.Build.0 = Release
+		{27C90187-FFFA-4F2D-8DD8-35C9D6EC50A5}.Release|Any CPU.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B11C5A41-C8CA-4B96-8196-71C99872CB0A}
+	EndGlobalSection
+EndGlobal
