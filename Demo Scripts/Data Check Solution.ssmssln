@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Data Check - Demo Scripts", "Data Check - Demo Scripts\Data Check - Demo Scripts.ssmssqlproj", "{A118A75F-5CC8-4BA4-9888-04EDE1D1D877}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6629A1AC-3C1E-45E7-AEA2-1172D398029E}.Default|Default.ActiveCfg = Default
+		{A118A75F-5CC8-4BA4-9888-04EDE1D1D877}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
